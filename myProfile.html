@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechForig BCS admin</title>
+    <!-- bootstrap CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- data table css -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css" />
+    <!-- date range picker css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.1/css/dataTables.bootstrap5.min.css" />
+    <!-- Icofont CDN link -->
+    <link rel="stylesheet" href="./stylesheets/icofont/icofont.min.css" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./stylesheets/nav.css" />
+    <link rel="stylesheet" href="./stylesheets/myProfile.css" />
+    <!-- charts js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- top bar section starts here -->
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <!-- Brand/logo-->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/TechForingLogo.png" alt="Tech Foring" />
+                </a>
+                <!-- page title -->
+                <span class="navbar-text rounded-0 px-2  fw-bold text-primary">
+                    <a href="" class="">Business Cybersecurity</a>
+                </span>
+                <span class="navbar-text rounded-0 px-2 fw-bold text-primary">
+                    <a href="" class="">Personal Cybersecurity</a>
+                </span>
+                <span class="dropdown">
+                    <a class="nav-link btn-primary dropdown text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./myProfile.html">My profile</a></li>
+                        <li><a class="dropdown-item" href="#">Sgn out</a></li>
+                    </ul>
+                </span>
+            </div>
+        </nav>
+        <!-- top bar section ends here -->
+        <!-- sidebar section starts here -->
+        <aside>
+            <div class="aside-container position-fixed bg-white px-1 pt-2 d-none d-lg-block">
+                <!-- Nav links starts here -->
+                <ul class="menubar">
+                    <li>
+                        <a href="./index.html" class="nav-link active">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="29.273" height="23"
+                                viewBox="0 0 29.273 23">
+                                <path id="list-alt"
+                                    d="M6.273,17.25V18.3a.53.53,0,0,1-.523.523H4.7a.529.529,0,0,1-.522-.523V17.25a.53.53,0,0,1,.523-.523H5.751a.53.53,0,0,1,.523.523Zm0-4.182v1.046a.53.53,0,0,1-.523.523H4.7a.529.529,0,0,1-.522-.523V13.068a.529.529,0,0,1,.523-.522H5.751a.529.529,0,0,1,.522.522Zm0-4.182V9.932a.53.53,0,0,1-.523.523H4.7a.529.529,0,0,1-.522-.523V8.886A.529.529,0,0,1,4.7,8.364H5.751a.529.529,0,0,1,.522.523ZM25.092,17.25V18.3a.53.53,0,0,1-.523.523H8.887a.53.53,0,0,1-.523-.523V17.25a.53.53,0,0,1,.523-.523H24.569a.53.53,0,0,1,.523.523Zm0-4.182v1.046a.53.53,0,0,1-.523.523H8.887a.53.53,0,0,1-.523-.523V13.068a.529.529,0,0,1,.523-.522H24.569a.53.53,0,0,1,.523.523Zm0-4.182V9.932a.53.53,0,0,1-.523.523H8.887a.53.53,0,0,1-.523-.523V8.886a.529.529,0,0,1,.523-.522H24.569a.53.53,0,0,1,.523.523Zm2.091,11.5V6.8a.53.53,0,0,0-.522-.523H2.613a.53.53,0,0,0-.523.523V20.387a.53.53,0,0,0,.523.523H26.659a.53.53,0,0,0,.523-.523ZM29.273,2.613V20.387A2.621,2.621,0,0,1,26.659,23H2.613a2.517,2.517,0,0,1-1.846-.768A2.517,2.517,0,0,1,0,20.387V2.613A2.517,2.517,0,0,1,.768.768,2.517,2.517,0,0,1,2.613,0H26.659a2.517,2.517,0,0,1,1.846.768,2.517,2.517,0,0,1,.768,1.846Z"
+                                    fill="#111125" />
+                            </svg>
+                            dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <span class="nav-link dropdown-btn dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-collection-fill"></i>
+                            services
+                        </span>
+                        <ul class="dropdown-container" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-link" href="./service.html">
+                                    Main Service
+                                </a></li>
+                            <li>
+                                <a class="dropdown-item nav-link" href="./subService.html">
+                                    Sub Service
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="nav-link dropdown-btn dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-people-fill"></i>
+                            users & admin
+                        </span>
+                        <ul class="dropdown-container" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="./users.html" class="dropdown-item nav-link">
+                                    users
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./adminUsers.html" class="dropdown-item nav-link">
+                                    admin users
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./readingList.html" class="nav-link">
+                            <i class="bi bi-file-earmark-fill"></i> Reading List
+                        </a>
+                    </li>
+                    <li>
+                        <span class="nav-link dropdown-btn dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-tag-fill"></i>
+                            Subscription
+                        </span>
+                        <ul class="dropdown-container" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-link" href="./subscriptionList.html">Subscription List</a></li>
+                            <li><a class="dropdown-item nav-link" href="./subscriptionPack.html">Subscription Package</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./revenue.html" class="nav-link">
+                            <i class="bi bi-currency-dollar"></i> revenue
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./userInterest.html" class="nav-link">
+                            <i class="bi bi-hand-index-fill"></i> user interest
+                        </a>
+                    </li>
+
+                    <!-- <li>
+                        <span href="" class="nav-link dropdown-btn dropdown-toggle" id="supportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icofont-life-buoy"></i>
+                            support
+                        </span>
+                        <ul class="dropdown-container " aria-labelledby="supportDropdown">
+                            <li><a class="dropdown-item nav-link" href="{% host_url 'main_admin_support_view' %}">Admin View</a></li>
+                            <li><a class="dropdown-item nav-link" href="{% host_url 'main_admin_stuff_view' %}">Stuff View</a></li>
+                            <li><a class="dropdown-item nav-link" href="{% host_url 'main_admin_all_tickets' %}">All Tickets</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <!-- nav links ends here -->
+            </div>
+        </aside>
+        <!-- sidebar section ends here -->
+    </header>
+    <!-- main section starts -->
+    <main>
+        <div class="container">
+            <div class="jumbotron d-grid">
+                <img src="./images/Techforing-Icon.png" alt="">
+                <div class="row align-end">
+                    <div class="col-md-4">
+                        <h3>AZHARUL</h3>
+                        <p class="text-primary mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.998" height="16" viewBox="0 0 19.998 16">
+                                <path id="Icon_awesome-user-cog" data-name="Icon awesome-user-cog" d="M19.078,11.666a3.666,3.666,0,0,0,0-1.331l.806-.466a.226.226,0,0,0,.1-.266A4.69,4.69,0,0,0,18.95,7.809a.228.228,0,0,0-.281-.044l-.806.466a3.669,3.669,0,0,0-1.153-.666V6.634a.228.228,0,0,0-.178-.222,4.715,4.715,0,0,0-2.069,0,.228.228,0,0,0-.178.222v.931a3.669,3.669,0,0,0-1.153.666l-.806-.466a.229.229,0,0,0-.281.044A4.69,4.69,0,0,0,11.006,9.6a.23.23,0,0,0,.1.266l.806.466a3.666,3.666,0,0,0,0,1.331l-.806.466a.226.226,0,0,0-.1.266,4.713,4.713,0,0,0,1.038,1.794.228.228,0,0,0,.281.044l.806-.466a3.669,3.669,0,0,0,1.153.666v.931a.228.228,0,0,0,.178.222,4.715,4.715,0,0,0,2.069,0,.228.228,0,0,0,.178-.222v-.931a3.669,3.669,0,0,0,1.153-.666l.806.466a.229.229,0,0,0,.281-.044A4.69,4.69,0,0,0,19.988,12.4a.23.23,0,0,0-.1-.266Zm-3.578.85A1.516,1.516,0,1,1,17.016,11,1.517,1.517,0,0,1,15.5,12.516ZM7,8A4,4,0,1,0,3,4,4,4,0,0,0,7,8Zm6.288,7.078c-.072-.038-.144-.081-.212-.122l-.247.144a1.226,1.226,0,0,1-1.516-.228A5.7,5.7,0,0,1,10.056,12.7a1.222,1.222,0,0,1,.559-1.428l.247-.144q0-.122,0-.244l-.247-.144a1.221,1.221,0,0,1-.559-1.428c.028-.091.069-.181.1-.272C10.038,9.028,9.922,9,9.8,9H9.278A5.44,5.44,0,0,1,4.722,9H4.2A4.2,4.2,0,0,0,0,13.2v1.3A1.5,1.5,0,0,0,1.5,16h11a1.5,1.5,0,0,0,.85-.266,1.217,1.217,0,0,1-.062-.369Z" fill="#182f59"/>
+                            </svg>
+                              
+                            ADMIN
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><i class="bi bi-envelope-fill"></i> info@techforing.com</p>
+                        <p class="mt-2"><i class="bi bi-telephone-fill"></i> +1-(616)-251-1517</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary text-uppercase mt-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">edit profile</button>
+            </div>
+        </div>
+        <div class="container ms-md-5">
+            <h2 class="my-5">My Recent Activities <span class="text-danger activity-delete-all btn"><i class="bi bi-trash"></i> Delete
+                    All</span></h2>
+            <div class="recent-activites">
+                <div class="activity">
+                    <p>create notification</p> <button class="btn delete-activites"><i class="bi bi-trash text-danger"></i></button>
+                </div>
+                <div class="activity">
+                    <p>create notification</p> <button class="btn delete-activites"><i class="bi bi-trash text-danger"></i></button>
+                </div>
+                <div class="activity">
+                    <p>create notification</p> <button class="btn delete-activites"><i class="bi bi-trash text-danger"></i></button>
+                </div>
+                <div class="activity">
+                    <p>edited notification</p> <button class="btn delete-activites"><i class="bi bi-trash text-danger"></i></button>
+                </div>
+                <div class="activity">
+                    <p>cleared</p> <button class="btn delete-activites"><i class="bi bi-trash text-danger"></i></button>
+                </div>
+                <div class="activity">
+                    <p>edited</p> <button class="btn delete-activites"><i class="bi bi-trash text-danger"></i></button>
+                </div>
+                <div class="activity">
+                    <p>create notification</p> <button class="btn delete-activites"><i class="bi bi-trash text-danger"></i></button>
+                </div>
+                <div class="activity">
+                    <p>create notification</p> <button class="btn delete-activites"><i class="bi bi-trash text-danger"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade profile-edit" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Edit profile</h5>
+                            <img src="./images/Techforing-Icon.png" alt="">
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="col-auto mb-3">
+                                <label for="file">Image</label>
+                                <input type="file" class="form-control" id="file" />
+                            </div>
+                            <div class="col-auto mb-3">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter Name" />
+                            </div>
+                            <div class="col-auto mb-3">
+                                <label for="email">email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email" />
+                            </div>
+                            <div class="col-auto mb-3">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" placeholder="+000-5555-6666" class="form-control" id="phone" />
+                            </div>
+                            <div class="col-auto mb-3">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="******" />
+                            </div>
+                            <div class="col-auto mb-3">
+                                <label for="confirmPassword">Password</label>
+                                <input type="confirmPassword" class="form-control" id="confirmPassword"
+                                    placeholder="******" />
+                            </div>
+                            <button type="button" class="btn btn-primary">
+                                Update
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main section ends -->
+    <!-- main section ends -->
+    <footer id="footer-small" class="footer footer-shrink bg-blue py-4">
+        <div class="d-flex justify-content-center">
+            <a href="" class="me-5">PRIVACY POLICY</a>
+            <a href="">TERMS OF USE</a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <a href="https://www.facebook.com/techforing/">
+                <!-- <img src="{% static '' %}tfimg/user_panel/facebook.png" class="me-3" alt=""> -->
+                <i class="bi bi-facebook me-3"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/techforingltd./">
+                <!-- <img src="{% static '' %}tfimg/user_panel/linkedin.png" class="me-3" alt=""> -->
+                <i class="bi bi-linkedin me-3"></i>
+            </a>
+            <a href="https://twitter.com/techforingltd?lang=en">
+                <!-- <img src="{% static '' %}tfimg/user_panel/twitter.png" class="me-3" alt=""> -->
+                <i class="bi bi-twitter me-3"></i>
+            </a>
+            <a href="https://www.instagram.com/techforingltd/">
+                <!-- <img src="{% static '' %}tfimg/user_panel/Instagram.png" alt=""> -->
+                <i class="bi bi-instagram me-3"></i>
+            </a>
+        </div>
+        <div class="p-3 p pb-2 text-center text-white ">
+            <p >Copyright © 2021 Techforing Ltd.
+            </p>
+        </div>
+    </footer>
+    <!-- bootstrap scripts CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- jquery scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <!-- data table library -->
+    <script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.1/js/dataTables.bootstrap5.min.js"></script>
+    <!-- date range picker -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- custom scripts -->
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/notification.js"></script>
+    <script>
+        const activitiesDeleteBtn = document.querySelectorAll(".delete-activites")
+        const activityDeleteAll = document.querySelector(".activity-delete-all")
+        activitiesDeleteBtn.forEach(del=>{
+            del.addEventListener('click',()=>{
+                del.parentElement.classList.add("d-none")
+            })
+        })
+        activityDeleteAll.addEventListener('click',()=>{
+            activitiesDeleteBtn.forEach(del=>{
+                del.parentElement.classList.add("d-none")
+            })
+        })
+    </script>
+</body>
+
+</html>
