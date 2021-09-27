@@ -79,7 +79,7 @@ table tbody td, table thead th{
 nav {
     box-shadow: 1px 1px 1px 1px var(--var-box-shadow-color);
     background-color: var(--var-topbar-background-color);
-    padding-inline: 20px;
+    padding-inline-end: 20px;
 }
 
 .topbar-dropdown {
@@ -441,6 +441,10 @@ body {
 .menubar .dropdown-container li a{
     /* padding-left: 3.5rem; */
     display: block;
+}
+
+.menubar .dropdown-container li a::after{
+    display: none;
 }
 
 #event-details td .btn {
