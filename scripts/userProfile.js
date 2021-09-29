@@ -1,10 +1,10 @@
 
 $(document).ready(function () {
     $("#individual-user-info").DataTable({
-        responsive: true,
+        responsive: false,
+        "scrollX": true,
         info: false,
         columnDefs: [{
-            // className: 'select-checkbox',
             orderable: false,
             targets: [-1]
         }],
@@ -33,7 +33,7 @@ $(document).ready(function () {
         "paging": false,
     });
 })
-const overviewRow = document.querySelectorAll("#individual-user-info tr")
+const overviewRow = document.querySelectorAll("#individual-user-info .service")
 const overviewDialogue = document.querySelector(".overview-dialogue")
 const overviewDialogueClose = document.querySelector(".close-overview")
 overviewRow.forEach(items =>{

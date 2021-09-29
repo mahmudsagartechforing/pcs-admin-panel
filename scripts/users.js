@@ -123,7 +123,7 @@ $(document).ready(function () {
     });
 
     $("#individual-user-info").DataTable({
-        responsive: true,
+        scrollX: true,
         info: false,
         columnDefs: [{
             // className: 'select-checkbox',
@@ -155,8 +155,6 @@ $(document).ready(function () {
         "paging": false,
     });
 })
-
-
 
 
 

@@ -79,11 +79,11 @@
                         </span>
                         <ul class="dropdown-container" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item nav-link" href="./service.html">
-                                    Main Service
+                                    Service Category
                                 </a></li>
                             <li>
                                 <a class="dropdown-item nav-link" href="./subService.html">
-                                    Sub Service
+                                    Services
                                 </a></li>
                         </ul>
                     </li>
@@ -96,12 +96,12 @@
                         <ul class="dropdown-container" aria-labelledby="navbarDropdown">
                             <li>
                                 <a href="./users.html" class="dropdown-item nav-link">
-                                    Personal Cybersecurity Users
+                                    users
                                 </a>
                             </li>
                             <li>
                                 <a href="./adminUsers.html" class="dropdown-item nav-link">
-                                    admin panel users
+                                    admin users
                                 </a>
                             </li>
                         </ul>
@@ -193,27 +193,31 @@
                             </div>
                             <div id="checkboxes">
                                 <label for="one">
-                                    <input type="checkbox" id="one">By New
-                                    User</label>
+                                    <input type="checkbox" id="one" name="one">Concierge</label>
                                 <label for="two">
-                                    <input type="checkbox" id="two">By
-                                    Revenue</label>
+                                    <input type="checkbox" id="two" name="one">OSINT</label>
                                 <label for="three">
-                                    <input type="checkbox" id="three">By
-                                    Order</label>
+                                    <input type="checkbox" id="three" name="one">Hack Recovery</label>
                                 <label for="three">
-                                    <input type="checkbox" id="three">By
-                                    interest List</label>
+                                    <input type="checkbox" id="three" name="one">Data Removal</label>
+                                <label for="three">
+                                    <input type="checkbox" id="three" name="one">Virus Removal</label>
+                                <label for="three">
+                                    <input type="checkbox" id="three" name="one">Crime Investigation</label>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <input type="text" id="dashboardDaterange" value="Select By Time range" name="daterange">
+                    <div class="col-md-3">
+                        <input type="text" id="daterange" value="Select By Time range" name="daterange">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" id="daterange" value="Compare By Time range" name="daterange">
                     </div>
                 </div>
                 <div class="row">
 
                     <div class="col-md-12">
+                        <h3>OVERVIEW OF PCS REVENUE</h3>
                         <canvas id="info-chart"></canvas>
 
                         <div class="filter-options d-flex w-85 float-end justify-content-between mb-3">

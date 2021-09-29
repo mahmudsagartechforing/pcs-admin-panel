@@ -80,11 +80,11 @@
                         </span>
                         <ul class="dropdown-container" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item nav-link" href="./service.html">
-                                    Main Service
+                                    Service Category
                                 </a></li>
                             <li>
                                 <a class="dropdown-item nav-link" href="./subService.html">
-                                    Sub Service
+                                    Services
                                 </a></li>
                         </ul>
                     </li>
@@ -97,12 +97,12 @@
                         <ul class="dropdown-container" aria-labelledby="navbarDropdown">
                             <li>
                                 <a href="./users.html" class="dropdown-item nav-link">
-                                    Personal Cybersecurity Users
+                                    users
                                 </a>
                             </li>
                             <li>
                                 <a href="./adminUsers.html" class="dropdown-item nav-link">
-                                    admin panel users
+                                    admin users
                                 </a>
                             </li>
                         </ul>
@@ -119,8 +119,10 @@
                             Subscription
                         </span>
                         <ul class="dropdown-container" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item nav-link" href="./subscriptionList.html">Subscription List</a></li>
-                            <li><a class="dropdown-item nav-link" href="./subscriptionPack.html">Subscription Package</a></li>
+                            <li><a class="dropdown-item nav-link" href="./subscriptionList.html">Subscription List</a>
+                            </li>
+                            <li><a class="dropdown-item nav-link" href="./subscriptionPack.html">Subscription
+                                    Package</a></li>
                         </ul>
                     </li>
                     <li>
@@ -159,7 +161,6 @@
                     <div class="col-md-4">
                         <div class="package-stat">
                             <div class="shadow p-4 mt-4" style="vertical-align: middle;">
-                                <h4>Monthly Revenue</h4>
                                 <canvas id="package-chart"></canvas>
                             </div>
                         </div>
@@ -168,7 +169,7 @@
                         <div class="row g-4 align-content-center">
                             <div class="col-md-6">
                                 <div class="subscription-info" style="background-color: #4566A0;">
-                                    <h3>Risk assessment</h3>
+                                    <h3>Basic</h3>
                                     <p class="fw-bolder">
                                         <i class="bi bi-person"></i> <span style="font-size: 25px;">750</span> users
                                     </p>
@@ -176,7 +177,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="subscription-info" style="background-color: #2C4C8C;">
-                                    <h3>Incident response</h3>
+                                    <h3>Medium</h3>
                                     <p class="fw-bolder">
                                         <i class="bi bi-person"></i> <span style="font-size: 25px;">750</span> users
                                     </p>
@@ -184,7 +185,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="subscription-info" style="background-color: #2C4C8C;">
-                                    <h3>Security comliance</h3>
+                                    <h3>Advanced</h3>
                                     <p class="fw-bolder">
                                         <i class="bi bi-person"></i> <span style="font-size: 25px;">750</span> users
                                     </p>
@@ -192,7 +193,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="subscription-info" style="background-color: #182F59;">
-                                    <h3>SMB Solution</h3>
+                                    <h3>Maximum</h3>
                                     <p class="fw-bolder">
                                         <i class="bi bi-person"></i> <span style="font-size: 25px;">750</span> users
                                     </p>
@@ -207,259 +208,317 @@
             <div class="container">
                 <div class="row my-5">
                     <div class="subscription-container position-relative px-0 px-md-2 text-center">
-                        <div class="border-bottom border-gray pb-1">
-
-                            <div class="d-flex justify-content-between">
-                                <h4 class="fw-bold">SUBSCRIPTION PACKAGES (Concierge Service)</h4>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal-1">Add package</button>
+                        <div class="plugAndPlay">
+                            <div class="border-bottom border-gray pb-1">
+                                <div class="d-flex justify-content-between">
+                                    <h4 class="fw-bold">SUBSCRIPTION PACKAGES (plug & play program)</h4>
+                                    <button class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#subscribeModal-1">Add package</button>
+                                </div>
                             </div>
+                            <section class="package-details mt-4">
+                                <div
+                                    class="package col-9 col-sm-4 col-md-3 col-xl-auto bg-lightgreen shadow p-3 rounded">
+                                    <h3 class="fw-bold fs-4">BASIC</h3>
+                                    <table class="mx-auto mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td>Cybersecurity & Privacy Program
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Risk Assessment
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Data Privacy & Protection
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vendor Screening
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Incident Response Strategy
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Awareness & Training
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Continuous consultation
+                                                </td>
+                                                <td>●</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Certification
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="info-btn">
+                                        <p class="mb-0">
+                                            <i class="bi bi-person-fill"></i> Max workstations
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="info-btn">
+                                        <p class="mt-2">
+                                            <i class="bi bi-person-fill"></i> Max servers
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="info-btn">
+                                        <p class="mt-2">
+                                            <i class="bi bi-person-fill"></i> Max websites
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="mt-2 info-btn">
+                                        <p class="mb-0">
+                                            <i class="icofont-tag"></i> Price
+                                        </p>
+                                        <p class="mb-0 fw-bold">500$ <span class="fw-bolder">/Month</span>
+                                        </p>
+                                    </div>
+                                    <button class="mt-3 btn bg-navy px-5 py-1 text-uppercase" data-bs-toggle="modal"
+                                        data-bs-target="#subscribeModal-2">Edit</button>
+                                </div>
+                                <div
+                                    class="package col-9 col-sm-4 col-md-3 col-xl-auto bg-lightgreen shadow p-3 rounded">
+                                    <h3 class="fw-bold fs-4 text-uppercase">Medium</h3>
+                                    <table class="mx-auto mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td>Cybersecurity & Privacy Program
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Risk Assessment
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Data Privacy & Protection
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vendor Screening
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Incident Response Strategy
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Awareness & Training
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Continuous consultation
+                                                </td>
+                                                <td>●</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Certification
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="info-btn">
+                                        <p class="mb-0">
+                                            <i class="bi bi-person-fill"></i> Max workstations
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="info-btn">
+                                        <p class="mt-2">
+                                            <i class="bi bi-person-fill"></i> Max servers
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="info-btn">
+                                        <p class="mt-2">
+                                            <i class="bi bi-person-fill"></i> Max websites
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="mt-2 info-btn">
+                                        <p class="mb-0">
+                                            <i class="icofont-tag"></i> Price
+                                        </p>
+                                        <p class="mb-0 fw-bold">500$ <span class="fw-bolder">/Month</span>
+                                        </p>
+                                    </div>
+                                    <button class="mt-3 btn bg-navy px-5 py-1 text-uppercase" data-bs-toggle="modal"
+                                        data-bs-target="#subscribeModal-2">Edit</button>
+                                </div>
+                                <div
+                                    class="package col-9 col-sm-4 col-md-3 col-xl-auto bg-lightgreen shadow p-3 rounded">
+                                    <h3 class="fw-bold fs-4 text-uppercase">Advanced</h3>
+                                    <table class="mx-auto mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td>Cybersecurity & Privacy Program
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Risk Assessment
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Data Privacy & Protection
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vendor Screening
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Incident Response Strategy
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Awareness & Training
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Continuous consultation
+                                                </td>
+                                                <td>●</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Certification
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="info-btn">
+                                        <p class="mb-0">
+                                            <i class="bi bi-person-fill"></i> Max workstations
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="info-btn">
+                                        <p class="mt-2">
+                                            <i class="bi bi-person-fill"></i> Max servers
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="info-btn">
+                                        <p class="mt-2">
+                                            <i class="bi bi-person-fill"></i> Max websites
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="mt-2 info-btn">
+                                        <p class="mb-0">
+                                            <i class="icofont-tag"></i> Price
+                                        </p>
+                                        <p class="mb-0 fw-bold">500$ <span class="fw-bolder">/Month</span>
+                                        </p>
+                                    </div>
+                                    <button class="mt-3 btn bg-navy px-5 py-1 text-uppercase" data-bs-toggle="modal"
+                                        data-bs-target="#subscribeModal-2">Edit</button>
+                                </div>
+                                <div
+                                    class="package col-9 col-sm-4 col-md-3 col-xl-auto bg-lightgreen shadow p-3 rounded">
+                                    <h3 class="fw-bold fs-4 text-uppercase">MAXIMUM</h3>
+                                    <table class="mx-auto mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td>Cybersecurity & Privacy Program
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Risk Assessment
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Data Privacy & Protection
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vendor Screening
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Incident Response Strategy
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Awareness & Training
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Continuous consultation
+                                                </td>
+                                                <td>●</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Certification
+                                                </td>
+                                                <td>✓</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="info-btn">
+                                        <p class="mb-0">
+                                            <i class="bi bi-person-fill"></i> Max workstations
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="info-btn">
+                                        <p class="mt-2">
+                                            <i class="bi bi-person-fill"></i> Max servers
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="info-btn">
+                                        <p class="mt-2">
+                                            <i class="bi bi-person-fill"></i> Max websites
+                                        </p>
+                                        <p class="mb-0 fw-bold">5</p>
+                                    </div>
+                                    <div class="mt-2 info-btn">
+                                        <p class="mb-0">
+                                            <i class="icofont-tag"></i> Price
+                                        </p>
+                                        <p class="mb-0 fw-bold">500$ <span class="fw-bolder">/Month</span>
+                                        </p>
+                                    </div>
+                                    <button class="mt-3 btn bg-navy px-5 py-1 text-uppercase" data-bs-toggle="modal"
+                                        data-bs-target="#subscribeModal-2">Edit</button>
+                                </div>
+                            </section>
                         </div>
-                        <section class="package-details mt-4">
-                            <div class="package col-9 col-sm-4 col-md-3 col-xl-auto bg-lightgreen shadow p-3 rounded">
-                                <h3 class="fw-bold fs-4">BASIC</h3>
-                                <table class="mx-auto mb-3">
-                                    <tbody>
-                                        <tr>
-                                            <td>Cybersecurity & Privacy Program
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Risk Assessment
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Data Privacy & Protection
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vendor Screening
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Incident Response Strategy
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Awareness & Training
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Continuous consultation
-                                            </td>
-                                            <td>●</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Certification
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="info-btn">
-                                    <p class="mb-0">
-                                        <i class="bi bi-person-fill"></i> Max workstations
-                                    </p>
-                                    <p class="mb-0 fw-bold">5</p>
-                                </div>
-                                <div class="info-btn">
-                                    <p class="mt-2">
-                                        <i class="bi bi-person-fill"></i> Max servers
-                                    </p>
-                                    <p class="mb-0 fw-bold">5</p>
-                                </div>
-                                <div class="info-btn">
-                                    <p class="mt-2">
-                                        <i class="bi bi-person-fill"></i> Max websites
-                                    </p>
-                                    <p class="mb-0 fw-bold">5</p>
-                                </div>
-                                <div class="mt-2 info-btn">
-                                    <p class="mb-0">
-                                        <i class="icofont-tag"></i> Price
-                                    </p>
-                                    <p class="mb-0 fw-bold">500$
-                                    </p>
-                                </div>
-                                <button class="mt-3 btn bg-navy px-5 py-1 text-uppercase" data-bs-toggle="modal"
-                                    data-bs-target="#subscribeModal-2">Edit</button>
-                            </div>
-                            <div class="package col-9 col-sm-4 col-md-3 col-xl-auto bg-lightgreen shadow p-3 rounded">
-                                <h3 class="fw-bold fs-4 text-uppercase">Medium</h3>
-                                <table class="mx-auto mb-3">
-                                    <tbody>
-                                        <tr>
-                                            <td>Cybersecurity & Privacy Program
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Risk Assessment
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Data Privacy & Protection
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vendor Screening
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Incident Response Strategy
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Awareness & Training
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Continuous consultation
-                                            </td>
-                                            <td>●</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Certification
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="info-btn">
-                                    <p class="mb-0">
-                                        <i class="bi bi-person-fill"></i> Max workstations
-                                    </p>
-                                    <p class="mb-0 fw-bold">5</p>
-                                </div>
-                                <div class="info-btn">
-                                    <p class="mt-2">
-                                        <i class="bi bi-person-fill"></i> Max servers
-                                    </p>
-                                    <p class="mb-0 fw-bold">5</p>
-                                </div>
-                                <div class="info-btn">
-                                    <p class="mt-2">
-                                        <i class="bi bi-person-fill"></i> Max websites
-                                    </p>
-                                    <p class="mb-0 fw-bold">5</p>
-                                </div>
-                                <div class="mt-2 info-btn">
-                                    <p class="mb-0">
-                                        <i class="icofont-tag"></i> Price
-                                    </p>
-                                    <p class="mb-0 fw-bold">500$
-                                    </p>
-                                </div>
-                                <button class="mt-3 btn bg-navy px-5 py-1 text-uppercase" data-bs-toggle="modal"
-                                    data-bs-target="#subscribeModal-2">Edit</button>
-                            </div>
-                            <div class="package col-9 col-sm-4 col-md-3 col-xl-auto bg-lightgreen shadow p-3 rounded">
-                                <h3 class="fw-bold fs-4 text-uppercase">Advanced</h3>
-                                <table class="mx-auto mb-3">
-                                    <tbody>
-                                        <tr>
-                                            <td>Cybersecurity & Privacy Program
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Risk Assessment
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Data Privacy & Protection
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vendor Screening
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Incident Response Strategy
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Awareness & Training
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Continuous consultation
-                                            </td>
-                                            <td>●</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Certification
-                                            </td>
-                                            <td>✓</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="info-btn">
-                                    <p class="mb-0">
-                                        <i class="bi bi-person-fill"></i> Max workstations
-                                    </p>
-                                    <p class="mb-0 fw-bold">5</p>
-                                </div>
-                                <div class="info-btn">
-                                    <p class="mt-2">
-                                        <i class="bi bi-person-fill"></i> Max servers
-                                    </p>
-                                    <p class="mb-0 fw-bold">5</p>
-                                </div>
-                                <div class="info-btn">
-                                    <p class="mt-2">
-                                        <i class="bi bi-person-fill"></i> Max websites
-                                    </p>
-                                    <p class="mb-0 fw-bold">5</p>
-                                </div>
-                                <div class="mt-2 info-btn">
-                                    <p class="mb-0">
-                                        <i class="icofont-tag"></i> Price
-                                    </p>
-                                    <p class="mb-0 fw-bold">500$
-                                    </p>
-                                </div>
-                                <button class="mt-3 btn bg-navy px-5 py-1 text-uppercase" data-bs-toggle="modal"
-                                    data-bs-target="#subscribeModal-2">Edit</button>
-                            </div>
-                            <div class="package col-9 col-sm-4 col-md-3 col-xl-auto bg-lightgreen shadow p-3 rounded">
-                                <h3 class="fw-bold fs-4 text-uppercase">Custom</h3>
-                                <article class="custom-info fw-bold">
-                                    <p>
-                                        Lorem Ipsum is simply dummy text
-                                        of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's
-                                        standard dummy text ever since the
-                                        1500s, when an unknown printer took a
-                                        galley of type and scrambled it to make
-                                        a type specimen book. It has survived
-                                        not only five centuries, but also the
-                                        leap into electronic typesetting.
-                                    </p>
-                                </article>
-                                <li class="mt-4 mb-3 custom-info-listing"><span>Lorem Ipsum is simply dummy text of the
-                                        printing.</span> </li>
-                                <li class="mt-4 mb-3 custom-info-listing"><span>Lorem Ipsum is simply dummy text of the
-                                        printing.</span> </li>
-                                <li class="mt-4 mb-3 custom-info-listing"><span>Lorem Ipsum is simply dummy text of the
-                                        printing.</span> </li>
-                            </div>
-                        </section>
                     </div>
                 </div>
             </div>
@@ -477,6 +536,10 @@
                             <div class="d-flex justify-content-between">
                                 <h4>Package Details</h4>
                                 <h4>New Data</h4>
+                            </div>
+                            <div class="d-flex justify-content-between input">
+                                <label for="max-users">Package Name</label>
+                                <input type="text" id="max-users">
                             </div>
                             <div class="d-flex justify-content-between input">
                                 <label for="max-users">Max Servers</label>
@@ -498,48 +561,13 @@
                                 <label for="max-users">Price</label>
                                 <input type="text" id="max-users">
                             </div>
-                            <div class="input">
-                                <h5 class="mb-5">Service Modules</h5>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Cybersecurity & Privacy Program</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
+                            <div class="input featureInputContainer">
+                                <h5 class="mb-5">Subscription Feature</h5>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <input type="text" class="form-control w-85 feature-input"
+                                        placeholder="Add a Feature"> <button
+                                        class="btn btn-primary add-feature">Add</button>
                                 </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Risk Assessment</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Data Privacy & Protection</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Vendor Screening</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Incident Response Strategy</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Awareness & Training</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Continuous consultation</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Certification</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
-                                </div>
-                                <hr>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <!-- <button type="button" class="btn btn-primary">
@@ -570,6 +598,11 @@
                                 <h4 class="text-center">New Data</h4>
                             </div>
                             <div class="d-grid input">
+                                <label for="max-users">Package Name</label>
+                                <label for="max-users" class="text-center"></label>
+                                <input type="text" id="max-users">
+                            </div>
+                            <div class="d-grid input">
                                 <label for="max-users">Max Servers</label>
                                 <label for="max-users" class="text-center">5</label>
                                 <input type="text" id="max-users">
@@ -594,46 +627,36 @@
                                 <label for="max-users" class="text-center">199$</label>
                                 <input type="text" id="max-users">
                             </div>
-                            <div class="input">
-                                <h5 class="mb-5">Service Modules</h5>
+                            <div class="input featureInputContainer">
+                                <h5 class="mb-5">Subscription Feature</h5>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <input type="text" class="form-control w-85 feature-input"
+                                        placeholder="Add a Feature"> <button
+                                        class="btn btn-primary add-feature">Add</button>
+                                </div>
                                 <div class="d-flex justify-content-between align-content-center">
                                     <span>Cybersecurity & Privacy Program</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
+                                    <button class="btn btn-danger btn-sm">delete</button>
                                 </div>
                                 <hr>
                                 <div class="d-flex justify-content-between align-content-center">
                                     <span>Risk Assessment</span>
-                                    <button class="btn btn-primary btn-sm">Delete</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
                                 </div>
                                 <hr>
                                 <div class="d-flex justify-content-between align-content-center">
                                     <span>Data Privacy & Protection</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
                                 </div>
                                 <hr>
                                 <div class="d-flex justify-content-between align-content-center">
                                     <span>Vendor Screening</span>
-                                    <button class="btn btn-primary btn-sm">Delete</button>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Incident Response Strategy</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Awareness & Training</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <span>Continuous consultation</span>
-                                    <button class="btn btn-primary btn-sm">ADD</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
                                 </div>
                                 <hr>
                                 <div class="d-flex justify-content-between align-content-center">
                                     <span>Certification</span>
-                                    <button class="btn btn-primary btn-sm">Delete</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
                                 </div>
                                 <hr>
                             </div>
@@ -642,7 +665,7 @@
                                     Save and add another
                                 </button> -->
                                 <button class="btn btn-primary text-capitalize" id="save-short-service">
-                                    save
+                                    update
                                 </button>
                             </div>
                         </form>
